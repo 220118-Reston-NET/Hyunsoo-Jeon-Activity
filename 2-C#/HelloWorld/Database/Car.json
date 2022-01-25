@@ -1,0 +1,12 @@
+[
+  {
+    "Color": "The color is White",
+    "Owner": "Hyunsoo",
+    "Fuel": 80
+  },
+  {
+    "Color": "The color is Grey",
+    "Owner": "Hanson",
+    "Fuel": 70
+  }
+]

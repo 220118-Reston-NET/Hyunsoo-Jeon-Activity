@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using  PokeModel;
+
+Ability ab = new Ability();
+ab.PP = -1;

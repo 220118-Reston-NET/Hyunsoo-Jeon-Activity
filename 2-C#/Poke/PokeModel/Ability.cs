@@ -23,6 +23,13 @@ namespace PokeModel
         public int Power { get; set; }
         public int Accuracy { get; set; }
 
+        public Ability(){
+            Name = "Tackle";
+            PP = 35;
+            Power = 35;
+            Accuracy = 70;
+        }
+
 
     }
 }

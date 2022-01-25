@@ -1,4 +1,5 @@
 using PokeModel;
+using PokeBL;
 
 namespace PokeUI
 {
@@ -6,6 +7,14 @@ namespace PokeUI
     {
         //static non-access modifier is needed to keep this variable consistent to all objects we create out of our AddPokeMenu
         private static Pokemon _newPoke = new Pokemon();
+        
+        //dependency injection
+        //***************************
+        private IPokemonBL _pokeBL;
+        public AddPokeMenu(IPokemonBL p_pokeBL){
+            _pokeBL = p_pokeBL;
+        }
+        
         public void Display()
         {
             Console.WriteLine("Enter Pokemon information");
@@ -24,6 +33,7 @@ namespace PokeUI
                 case "0":
                     return "MainMenu";
                 case "1":
+                    _pokeBL.AddPokemon(_newPoke);
                     return "MainMenu";
                 case "2":
                     Console.WriteLine("Please enter a level!");

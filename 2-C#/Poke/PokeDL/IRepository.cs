@@ -14,5 +14,9 @@ namespace PokeDL
         /// <param name="p_poke">this the pokemon object we are adding to the database</param>
         /// <returns></returns>
         Pokemon AddPokemon(Pokemon p_poke);
+
+        /// will give all pokemon in the database
+        /// returns a list collection of pokemon objects
+        List<Pokemon> GetAllPokemon();
     }
 }

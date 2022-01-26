@@ -27,6 +27,17 @@ namespace PokeBL
             p_poke.Defence += rand.Next(-5,5);
             p_poke.Health += rand.Next(-5,5);
 
+             //Validation process
+            List<Pokemon> listOfPoke = _repo.GetAllPokemon();
+            if (listOfPoke.Count < 4)
+            {
+                _repo.AddPokemon(p_poke);
+            }
+            else
+            {
+                throw new Exception("You cannot have more than 4 pokemons!");
+            }
+
             return _repo.AddPokemon(p_poke);
         }
     }

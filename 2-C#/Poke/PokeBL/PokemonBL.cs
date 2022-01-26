@@ -24,7 +24,7 @@ namespace PokeBL
             //processing data to meet conditions
             //it will either substract or add a range from -5 to 5
             p_poke.Attack += rand.Next(-5,5);
-            p_poke.Defence += rand.Next(-5,5);
+            p_poke.Defense += rand.Next(-5,5);
             p_poke.Health += rand.Next(-5,5);
 
              //Validation process
@@ -38,6 +38,16 @@ namespace PokeBL
                 throw new Exception("You cannot have more than 4 pokemons!");
             }
 
+        }
+
+        public List<Pokemon> SearchPokemon(string p_name)
+        {
+            List<Pokemon> listOfPokemon = _repo.GetAllPokemon();
+
+            //LINQ library
+            return listOfPokemon
+                        .Where(poke => poke.Name.Contains(p_name)) // where method is designed to filter a collection based on a condition
+                        .ToList(); // ToList method just converts into a list collection that our method needs to return
         }
     }
 }

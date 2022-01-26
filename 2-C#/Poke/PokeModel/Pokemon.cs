@@ -5,7 +5,7 @@
         public string Name { get; set; }
         public int Level { get; set; }
         public int Attack { get; set; }
-        public int Defence { get; set; }
+        public int Defense { get; set; }
         public int Health { get; set; }
         
         private List<Ability> _abilities;
@@ -31,12 +31,18 @@
             Name = "Ditto";
             Level = 1;
             Attack = 55;
-            Defence = 55;
+            Defense = 55;
             Health = 55;
             _abilities = new List<Ability>()
             {
                 new Ability()
             };
+        }
+
+        //Tostring() method is the string version of your object
+        public override string ToString()
+        {
+            return $"Name: {Name}\n Level: {Level}\n Attack: {Attack}\n Defence: {Defense}\n Health: {Health} ";
         }
     }
 }

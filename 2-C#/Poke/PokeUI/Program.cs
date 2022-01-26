@@ -15,6 +15,9 @@ while (repeat)
     
     switch (ans)
     {
+        case "SearchPokemon":
+            menu = new SearchPokemonMenu(new PokemonBL(new Repository()));
+            break;
         case "AddPokemon":
             menu = new AddPokeMenu(new PokemonBL(new Repository()));
             break;

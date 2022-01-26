@@ -3,8 +3,38 @@
     "Name": "Ditto",
     "Level": 1,
     "Attack": 54,
-    "Defence": 52,
+    "Defense": 55,
     "Health": 54,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 35,
+        "Power": 35,
+        "Accuracy": 70
+      }
+    ]
+  },
+  {
+    "Name": "Pichachu",
+    "Level": 2,
+    "Attack": 56,
+    "Defense": 55,
+    "Health": 53,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 35,
+        "Power": 35,
+        "Accuracy": 70
+      }
+    ]
+  },
+  {
+    "Name": "butterfly",
+    "Level": 4,
+    "Attack": 53,
+    "Defense": 56,
+    "Health": 50,
     "Abilities": [
       {
         "Name": "Tackle",

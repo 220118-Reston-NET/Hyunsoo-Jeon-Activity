@@ -7,6 +7,7 @@ namespace PokeUI
         {
             Console.WriteLine("Welcome to Pokemon!");
             Console.WriteLine("What would you like to do?");
+            Console.WriteLine("[2] Search Pokemon");
             Console.WriteLine("[1] Add pokemon to your team");
             Console.WriteLine("[0] Exit");
         }
@@ -22,6 +23,8 @@ namespace PokeUI
                     return "Exit";
                 case "1":
                     return "AddPokemon";
+                case "2":
+                    return "SearchPokemon";
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");

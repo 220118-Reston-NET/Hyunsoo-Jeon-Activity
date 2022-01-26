@@ -31,14 +31,13 @@ namespace PokeBL
             List<Pokemon> listOfPoke = _repo.GetAllPokemon();
             if (listOfPoke.Count < 4)
             {
-                _repo.AddPokemon(p_poke);
+               return _repo.AddPokemon(p_poke);
             }
             else
             {
                 throw new Exception("You cannot have more than 4 pokemons!");
             }
 
-            return _repo.AddPokemon(p_poke);
         }
     }
 }

@@ -1,15 +1,17 @@
-{
-  "Name": "Ditto",
-  "Level": 1,
-  "Attack": 51,
-  "Defence": 50,
-  "Health": 58,
-  "Abilities": [
-    {
-      "Name": "Tackle",
-      "PP": 35,
-      "Power": 35,
-      "Accuracy": 70
-    }
-  ]
-}
+[
+  {
+    "Name": "Ditto",
+    "Level": 1,
+    "Attack": 54,
+    "Defence": 52,
+    "Health": 54,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 35,
+        "Power": 35,
+        "Accuracy": 70
+      }
+    ]
+  }
+]

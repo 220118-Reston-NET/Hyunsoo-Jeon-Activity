@@ -1,0 +1,16 @@
+2022-01-26 22:16:56.348 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-01-26 22:17:07.850 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-01-26 22:17:10.100 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-01-26 22:17:11.570 -08:00 [INF] Adding pokemon 
+Name: Mouse
+ Level: 3
+ Attack: 55
+ Defence: 55
+ Health: 55 
+2022-01-26 22:17:11.612 -08:00 [INF] Successful at adding pokemon!
+2022-01-26 22:17:11.612 -08:00 [INF] Displaying Main menu to user
+2022-01-26 22:17:14.885 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-01-26 22:17:21.500 -08:00 [INF] Displaying Main menu to user
+2022-01-26 22:17:24.424 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-01-26 22:17:28.549 -08:00 [INF] Displaying Main menu to user
+2022-01-26 22:17:30.064 -08:00 [INF] Exiting application

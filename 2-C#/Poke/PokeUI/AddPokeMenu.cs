@@ -36,7 +36,9 @@ namespace PokeUI
                     //exception handling to have a better user experience
                     try
                     {
+                        Log.Information("Adding pokemon \n" + _newPoke);
                         _pokeBL.AddPokemon(_newPoke);
+                        Log.Information("Successful at adding pokemon!");
                     }
                     catch (System.Exception exc)
                     {

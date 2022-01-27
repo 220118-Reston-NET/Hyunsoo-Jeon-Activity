@@ -43,5 +43,20 @@
         "Accuracy": 70
       }
     ]
+  },
+  {
+    "Name": "Mouse",
+    "Level": 3,
+    "Attack": 50,
+    "Defense": 53,
+    "Health": 59,
+    "Abilities": [
+      {
+        "Name": "Tackle",
+        "PP": 35,
+        "Power": 35,
+        "Accuracy": 70
+      }
+    ]
   }
 ]

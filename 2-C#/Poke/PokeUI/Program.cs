@@ -1,4 +1,4 @@
-﻿global using Serilog;
+﻿global using Serilog; // global using will implicitly import that namespace to the rest of your C# files inside of this project
 using PokeUI;
 using PokeBL;
 using PokeDL;

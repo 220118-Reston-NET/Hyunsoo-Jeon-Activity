@@ -29,6 +29,8 @@ while (repeat)
             break;
         default:
             Console.WriteLine("Page does not exist!");
+            Console.WriteLine("Please press enter to continue");
+            Console.ReadLine();
             break;
     }
 }

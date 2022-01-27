@@ -42,7 +42,7 @@ namespace PokeUI
                     }
                     catch (System.Exception exc)
                     {
-                        
+                        Log.Warning("Failed to add pokemon due to reaching total capacity(4)");
                         Console.WriteLine(exc.Message);
                         Console.WriteLine("press enter to continue");
                         Console.ReadLine();

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeDL", "PokeDL\PokeDL.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeBL", "PokeBL\PokeBL.csproj", "{C617F03A-5660-4E18-AF3F-9AD49A5A9B07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeTest", "PokeTest\PokeTest.csproj", "{4C0DFF7B-36CD-46CB-8534-A36CA9F0A7A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{C617F03A-5660-4E18-AF3F-9AD49A5A9B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C617F03A-5660-4E18-AF3F-9AD49A5A9B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C617F03A-5660-4E18-AF3F-9AD49A5A9B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0DFF7B-36CD-46CB-8534-A36CA9F0A7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0DFF7B-36CD-46CB-8534-A36CA9F0A7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0DFF7B-36CD-46CB-8534-A36CA9F0A7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0DFF7B-36CD-46CB-8534-A36CA9F0A7A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

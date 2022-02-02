@@ -1,0 +1,44 @@
+2022-01-26 22:16:56.348 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-01-26 22:17:07.850 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-01-26 22:17:10.100 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-01-26 22:17:11.570 -08:00 [INF] Adding pokemon 
+Name: Mouse
+ Level: 3
+ Attack: 55
+ Defence: 55
+ Health: 55 
+2022-01-26 22:17:11.612 -08:00 [INF] Successful at adding pokemon!
+2022-01-26 22:17:11.612 -08:00 [INF] Displaying Main menu to user
+2022-01-26 22:17:14.885 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-01-26 22:17:21.500 -08:00 [INF] Displaying Main menu to user
+2022-01-26 22:17:24.424 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-01-26 22:17:28.549 -08:00 [INF] Displaying Main menu to user
+2022-01-26 22:17:30.064 -08:00 [INF] Exiting application
+2022-02-01 20:40:53.613 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-02-01 20:40:55.651 -08:00 [INF] Adding pokemon 
+Name: Ditto
+ Level: 1
+ Attack: 55
+ Defence: 55
+ Health: 55 
+2022-02-01 20:40:55.660 -08:00 [WRN] Failed to add pokemon due to reaching total capacity(4)
+2022-02-01 20:40:56.972 -08:00 [INF] Displaying Main menu to user
+2022-02-01 20:40:58.232 -08:00 [INF] Exiting application
+2022-02-01 20:53:13.393 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-02-01 20:53:18.686 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-02-01 20:54:35.035 -08:00 [INF] Displaying Add Pokemon menu to user
+2022-02-01 20:54:36.805 -08:00 [INF] Adding pokemon 
+Name: Foxfire
+ Level: 3
+ Attack: 55
+ Defence: 55
+ Health: 55 
+2022-02-01 20:54:37.698 -08:00 [INF] Successful at adding pokemon!
+2022-02-01 20:54:37.698 -08:00 [INF] Displaying Main menu to user
+2022-02-01 20:57:47.873 -08:00 [INF] Exiting application
+2022-02-01 20:57:52.059 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-02-01 20:57:58.613 -08:00 [INF] Displaying Main menu to user
+2022-02-01 20:57:59.948 -08:00 [INF] Exiting application
+2022-02-02 08:17:22.867 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-02-02 08:17:29.165 -08:00 [INF] Displaying Main menu to user
+2022-02-02 08:17:29.945 -08:00 [INF] Exiting application

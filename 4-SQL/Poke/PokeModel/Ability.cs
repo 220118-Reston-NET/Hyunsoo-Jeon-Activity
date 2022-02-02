@@ -31,6 +31,9 @@ namespace PokeModel
             Accuracy = 70;
         }
 
-
+        public override string ToString()
+        {
+            return $"ID: {AbId} \n Name: {Name} \n PP: {PP} \n Power: {Power} \n Accuracy: {Accuracy}";
+        }
     }
 }

@@ -23,5 +23,13 @@ namespace PokeBL
         /// <param name="p_name">Name parameter being used to filter our pokemon</param>
         /// <returns>gives a filtered list of pokemon via the name</returns>
         List<Pokemon> SearchPokemon(string p_name);
+
+        /// <summary>
+        /// Will give a list of abilities from a pokemon
+        /// </summary>
+        /// <param name="p_pokeId">The Id of the pokemon it will search</param>
+        /// <returns>list collection that holds ability objects</returns>
+        List<Ability> GetAbilitiesByPokeId(int p_pokeId);
+        List<Pokemon>? GetAllPokemon();
     }
 }

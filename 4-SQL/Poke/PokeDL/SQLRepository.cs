@@ -46,6 +46,38 @@ namespace PokeDL
             return p_poke;
         }
 
+        public List<Ability> GetAbilitiesByPokeId(int p_pokeId)
+        {
+            List<Ability> listOfAbility = new List<Ability>();
+            
+            string sqlQuery = @"select a.abId ,a.abName , a.abPP , a.abPower , a.abAccuracy from Pokemon p 
+                            inner join pokemons_abilities pa on p.pokeId = pa.pokeId 
+                            inner join Ability a on a.abId = pa.abId 
+                            where p.pokeId = @pokeId";
+
+            using(SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+                command.Parameters.AddWithValue("@pokeId", p_pokeId);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read())
+                {
+                    listOfAbility.Add(new Ability(){
+                        AbId = reader.GetInt32(0),
+                        Name = reader.GetString(1),
+                        PP = reader.GetInt32(2),
+                        Power = reader.GetInt32(3),
+                        Accuracy = reader.GetInt32(4)
+                    });
+                }
+            }
+            return listOfAbility;
+        }
+
         public List<Pokemon> GetAllPokemon()
         {
             List<Pokemon>listOfPokemon = new List<Pokemon>();
@@ -80,5 +112,6 @@ namespace PokeDL
             }
             return listOfPokemon;
         }
+
     }
 }

@@ -18,5 +18,13 @@ namespace PokeDL
         /// will give all pokemon in the database
         /// returns a list collection of pokemon objects
         List<Pokemon> GetAllPokemon();
+
+
+        /// <summary>
+        /// Will give a list of abilities from a pokemon
+        /// </summary>
+        /// <param name="p_pokeId">The Id of the pokemon it will search</param>
+        /// <returns>list collection that holds ability objects</returns>
+        List<Ability> GetAbilitiesByPokeId(int p_pokeId);
     }
 }

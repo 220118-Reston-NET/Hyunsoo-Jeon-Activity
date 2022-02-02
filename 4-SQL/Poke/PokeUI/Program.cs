@@ -28,6 +28,9 @@ while (repeat)
     
     switch (ans)
     {
+        case MenuType.GetPokeAbility:
+            menu = new GetPokeAbility(new PokemonBL(new SQLRepository(_connectionString)));
+            break;
         case MenuType.SearchPokemon:
             Log.Information("Displaying Search Pokemon menu to user");
             menu = new SearchPokemonMenu(new PokemonBL(new SQLRepository(_connectionString)));

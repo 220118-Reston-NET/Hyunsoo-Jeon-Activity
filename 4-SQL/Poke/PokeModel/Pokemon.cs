@@ -43,7 +43,7 @@
         //Tostring() method is the string version of your object
         public override string ToString()
         {
-            return $"Name: {Name}\n Level: {Level}\n Attack: {Attack}\n Defence: {Defense}\n Health: {Health} ";
+            return $"ID: {PokeId} \nName: {Name}\n Level: {Level}\n Attack: {Attack}\n Defence: {Defense}\n Health: {Health} ";
         }
     }
 }

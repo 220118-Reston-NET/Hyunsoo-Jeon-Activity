@@ -4,7 +4,7 @@ namespace PokeUI
     {
         MainMenu,
         Exit,
-        GetPokeAbililty,
+        GetPokeAbility,
         SearchPokemon,
         AddPokemon
     }

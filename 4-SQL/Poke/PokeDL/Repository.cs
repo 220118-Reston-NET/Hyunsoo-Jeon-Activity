@@ -30,5 +30,11 @@ namespace PokeDL
             //Deserialize the jsonString into a List<Pokemon> object and return it
             return JsonSerializer.Deserialize<List<Pokemon>>(_jsonString);
         }
+
+        public List<Ability> GetAbilitiesByPokeId(int p_pokeId)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

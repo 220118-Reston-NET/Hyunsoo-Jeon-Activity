@@ -42,3 +42,10 @@ Name: Foxfire
 2022-02-02 08:17:22.867 -08:00 [INF] Displaying Search Pokemon menu to user
 2022-02-02 08:17:29.165 -08:00 [INF] Displaying Main menu to user
 2022-02-02 08:17:29.945 -08:00 [INF] Exiting application
+2022-02-02 14:30:47.500 -08:00 [INF] Displaying Search Pokemon menu to user
+2022-02-02 14:30:56.183 -08:00 [INF] Displaying Main menu to user
+2022-02-02 14:32:37.942 -08:00 [INF] Exiting application
+2022-02-02 14:35:14.063 -08:00 [INF] Exiting application
+2022-02-02 14:40:32.807 -08:00 [INF] Displaying Main menu to user
+2022-02-02 14:40:39.722 -08:00 [INF] Displaying Main menu to user
+2022-02-02 14:40:41.416 -08:00 [INF] Exiting application

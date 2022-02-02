@@ -12,7 +12,7 @@ namespace PokeUI
             Console.WriteLine("[0] Exit");
         }
 
-        public string UserChoice()
+        public MenuType UserChoice()
         {
             string userInput = Console.ReadLine();
 
@@ -20,16 +20,16 @@ namespace PokeUI
             switch (userInput)
             {
                 case "0":
-                    return "Exit";
+                    return MenuType.Exit;
                 case "1":
-                    return "AddPokemon";
+                    return MenuType.AddPokemon;
                 case "2":
-                    return "SearchPokemon";
+                    return MenuType.SearchPokemon;
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");
                     Console.ReadLine();
-                    return "MainMenu";
+                    return MenuType.MainMenu;
             }
     }
 }

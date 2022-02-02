@@ -17,14 +17,14 @@ namespace PokeUI
             Console.WriteLine("[1] Search by Name");
             Console.WriteLine("[0] Go back!");
         }
-        public string UserChoice()
+        public MenuType UserChoice()
         {
             string userInput = Console.ReadLine();
 
             switch(userInput)
             {
                 case "0":
-                    return "MainMenu";
+                    return MenuType.MainMenu;
                 case "1":
                     // logic to grab user input
                     Console.WriteLine("Please enter a name");
@@ -40,12 +40,12 @@ namespace PokeUI
                     }
                     Console.WriteLine("Please press enter to continue");
                     Console.ReadLine();
-                    return "MainMenu";
+                    return MenuType.MainMenu;
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press enter to continue");
                     Console.ReadLine();
-                    return "SearchPokemon";
+                    return MenuType.SearchPokemon;
             }
         }
     }

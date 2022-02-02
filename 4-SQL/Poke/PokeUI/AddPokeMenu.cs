@@ -24,14 +24,14 @@ namespace PokeUI
             Console.WriteLine("[0] Go Back");
         }
 
-        public string UserChoice()
+        public MenuType UserChoice()
         {
             string userInput = Console.ReadLine();
 
             switch (userInput)
             {
                 case "0":
-                    return "MainMenu";
+                    return MenuType.MainMenu;
                 case "1":
                     //exception handling to have a better user experience
                     try
@@ -47,20 +47,20 @@ namespace PokeUI
                         Console.WriteLine("press enter to continue");
                         Console.ReadLine();
                     }
-                    return "MainMenu";
+                    return MenuType.MainMenu;
                 case "2":
                     Console.WriteLine("Please enter a level!");
                     _newPoke.Level = Convert.ToInt32(Console.ReadLine());
-                    return "AddPokemon";
+                    return MenuType.AddPokemon;
                 case "3":
                     Console.WriteLine("Please enter a name!");
                     _newPoke.Name = Console.ReadLine();
-                    return "AddPokemon";
+                    return MenuType.AddPokemon;
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");
                     Console.ReadLine();
-                    return "AddPokemon";
+                    return MenuType.AddPokemon;
             }
         }
     }

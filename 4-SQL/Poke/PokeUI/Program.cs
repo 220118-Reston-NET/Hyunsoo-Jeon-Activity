@@ -24,23 +24,23 @@ while (repeat)
 {
     Console.Clear();
     menu.Display();
-    string ans = menu.UserChoice();
+    MenuType ans = menu.UserChoice();
     
     switch (ans)
     {
-        case "SearchPokemon":
+        case MenuType.SearchPokemon:
             Log.Information("Displaying Search Pokemon menu to user");
             menu = new SearchPokemonMenu(new PokemonBL(new SQLRepository(_connectionString)));
             break;
-        case "AddPokemon":
+        case MenuType.AddPokemon:
             Log.Information("Displaying Add Pokemon menu to user");
             menu = new AddPokeMenu(new PokemonBL(new SQLRepository(_connectionString)));
             break;
-        case "MainMenu":
+        case MenuType.MainMenu:
             Log.Information("Displaying Main menu to user");
             menu = new MainMenu();
             break;
-        case "Exit":
+        case MenuType.Exit:
             Log.Information("Exiting application");
             Log.CloseAndFlush(); // to close our logger resource
             repeat = false;

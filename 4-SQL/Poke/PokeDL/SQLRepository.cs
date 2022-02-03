@@ -67,6 +67,7 @@ namespace PokeDL
                 while(reader.Read())
                 {
                     listOfAbility.Add(new Ability(){
+                        //reader column is NOT based on table structure but based on what your select query statement is displaying
                         AbId = reader.GetInt32(0),
                         Name = reader.GetString(1),
                         PP = reader.GetInt32(2),

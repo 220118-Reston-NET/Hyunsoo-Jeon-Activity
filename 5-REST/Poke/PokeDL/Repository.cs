@@ -36,5 +36,9 @@ namespace PokeDL
             throw new NotImplementedException();
         }
 
+        public Pokemon UpdatePokemon(Pokemon p_poke)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

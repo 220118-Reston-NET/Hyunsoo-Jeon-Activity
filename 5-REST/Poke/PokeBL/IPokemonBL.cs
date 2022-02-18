@@ -31,5 +31,7 @@ namespace PokeBL
         /// <returns>list collection that holds ability objects</returns>
         List<Ability> GetAbilitiesByPokeId(int p_pokeId);
         List<Pokemon> GetAllPokemon();
+        Pokemon UpdatePokemon(Pokemon p_poke);
+
     }
 }

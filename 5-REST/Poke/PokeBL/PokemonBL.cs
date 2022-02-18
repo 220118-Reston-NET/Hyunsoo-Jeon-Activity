@@ -29,7 +29,7 @@ namespace PokeBL
 
              //Validation process
             List<Pokemon> listOfPoke = _repo.GetAllPokemon();
-            if (listOfPoke.Count < 4)
+            if (listOfPoke.Count < 6)
             {
                return _repo.AddPokemon(p_poke);
             }
@@ -58,6 +58,11 @@ namespace PokeBL
             return listOfPokemon
                         .Where(poke => poke.Name.Contains(p_name)) // where method is designed to filter a collection based on a condition
                         .ToList(); // ToList method just converts into a list collection that our method needs to return
+        }
+
+        public Pokemon UpdatePokemon(Pokemon p_poke)
+        {
+            return _repo.UpdatePokemon(p_poke);
         }
     }
 }

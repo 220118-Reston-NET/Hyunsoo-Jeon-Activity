@@ -19,7 +19,7 @@ namespace PokeDL
         {
             //@ before the string will ignore special characters like /n
             //this is where you specify the sql statement required to do whatever operation you need based on the method
-            string sqlQuery = @"insert into Pokemon
+            string sqlQuery = @"insert into Pokemon (pokeName, pokeLevel, pokeAttack, pokeDefense, pokeHealth)
                                 values (@pokeName, @pokeLevel, @pokeAttack, @pokeDefense, @pokeHealth)";
 
             //using block is different from our normal using statement
@@ -78,6 +78,29 @@ namespace PokeDL
             }
             return listOfAbility;
         }
+
+        public Pokemon UpdatePokemon(Pokemon p_poke)
+        {
+            string sqlQuery = @"UPDATE Pokemon
+                            SET pokeName=@name, pokeLevel=@level, pokeAttack=@attack, pokeDefense=@defense, pokeHealth=@health
+                            WHERE pokeId=@id";
+            using(SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+                command.Parameters.AddWithValue("@name", p_poke.Name);
+                command.Parameters.AddWithValue("@level", p_poke.Level);
+                command.Parameters.AddWithValue("@attack", p_poke.Attack);
+                command.Parameters.AddWithValue("@defense", p_poke.Defense);
+                command.Parameters.AddWithValue("@health", p_poke.Health);
+                command.Parameters.AddWithValue("@id", p_poke.PokeId);
+
+                command.ExecuteNonQuery();
+
+            }
+            return p_poke;
+        }
+
 
         public List<Pokemon> GetAllPokemon()
         {

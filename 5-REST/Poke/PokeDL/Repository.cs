@@ -40,5 +40,10 @@ namespace PokeDL
         {
             throw new NotImplementedException();
         }
+
+        public Task<List<Pokemon>> GetAllPokemonAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

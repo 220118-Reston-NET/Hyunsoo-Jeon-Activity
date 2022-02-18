@@ -138,5 +138,41 @@ namespace PokeDL
             return listOfPokemon;
         }
 
+        public async Task<List<Pokemon>> GetAllPokemonAsync()
+        {
+            List<Pokemon> listOfPokemon = new List<Pokemon>();
+
+            string sqlQuery = @"select * from Pokemon";
+
+            using (SqlConnection con = new SqlConnection(_connectionStrings))
+            {
+                //opens connection to the database
+                await con.OpenAsync();
+                //create command object that has our sqlQuery and con object
+                SqlCommand command = new SqlCommand(sqlQuery, con);
+
+                //SqldataReader is a class specialized in reading outputs that came from a sql statement
+                //usually this outputs are in a form of a table and keep that in mind
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                //Read() methods checks if you have more rows to go through
+                //if there is another row = true, if not = false
+                while (reader.Read())
+                {
+                    listOfPokemon.Add(new Pokemon()
+                    {
+                        //Zero-based column index
+                        PokeId = reader.GetInt32(0), //It will get column PokeId since that is the very first column of our select statement
+                        Name = reader.GetString(1), //it will get the pokeName column since it is the second column of our select statement
+                        Level = reader.GetInt32(2),
+                        Attack = reader.GetInt32(3),
+                        Defense = reader.GetInt32(4),
+                        Health = reader.GetInt32(5),
+                        // Abilities = GetAbilitiesByPokeId(reader.GetInt32(0))
+                    });
+                }
+            }
+            return listOfPokemon;
+        }
     }
 }

@@ -10,10 +10,11 @@ Asynchronous demo = new Asynchronous();
 // Console.WriteLine(demo.CookVeggies());
 
 Task<string> riceTask = demo.CookRice();
-Task<string> meatTask = demo.CookMeat();
-Task<string> veggieTask = demo.CookVeggies();
+//Task<string> meatTask = demo.CookMeat();
+//Task<string> veggieTask = demo.CookVeggies();
+Task<string> mainCourseTask = demo.CookMeatthenVeiggies();
 
-List<Task<string>> toDoMakeDinner = new List<Task<string>>(){riceTask, meatTask, veggieTask};
+List<Task<string>> toDoMakeDinner = new List<Task<string>>(){riceTask, mainCourseTask};
 
 while(toDoMakeDinner.Count > 0)
 {

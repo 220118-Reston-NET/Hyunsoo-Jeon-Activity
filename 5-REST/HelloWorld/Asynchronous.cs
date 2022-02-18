@@ -23,6 +23,14 @@ namespace AsyncFunction
             await Task.Delay(1000);
             return "Finished cooking veggies";
         }
+
+        public async Task<string> CookMeatthenVeiggies()
+        {   
+            Console.WriteLine("Preparing main course");
+            Console.WriteLine(await CookMeat());
+            Console.WriteLine(await CookVeggies());
+            return "finsished cooking meat and veggies";
+        }
     }
 
 }

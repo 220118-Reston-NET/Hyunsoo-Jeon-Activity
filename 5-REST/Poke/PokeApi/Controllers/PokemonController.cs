@@ -24,11 +24,11 @@ namespace PokeApi.Controllers
         // [httpGet] data annotation basically tells the compire that the method will be an action inside of a controller
         // specifically this will handle a GET request from the client and send a http response
         [HttpGet("GetAll")]
-        public IActionResult GetAllPokemon()
+        public async Task<IActionResult> GetAllPokemonAsync()
         {
             try
             {
-                return Ok(_pokeBL.GetAllPokemon());
+                return Ok(await _pokeBL.GetAllPokemonAsync());
             }
             catch (SqlException)
             {

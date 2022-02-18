@@ -50,6 +50,11 @@ namespace PokeBL
             return _repo.GetAllPokemon();
         }
 
+        public async Task<List<Pokemon>> GetAllPokemonAsync()
+        {
+            return await _repo.GetAllPokemonAsync();
+        }
+
         public List<Pokemon> SearchPokemon(string p_name)
         {
             List<Pokemon> listOfPokemon = _repo.GetAllPokemon();

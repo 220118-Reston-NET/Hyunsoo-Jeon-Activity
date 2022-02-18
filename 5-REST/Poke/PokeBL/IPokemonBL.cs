@@ -33,5 +33,6 @@ namespace PokeBL
         List<Pokemon> GetAllPokemon();
         Pokemon UpdatePokemon(Pokemon p_poke);
 
+        Task<List<Pokemon>> GetAllPokemonAsync();
     }
 }

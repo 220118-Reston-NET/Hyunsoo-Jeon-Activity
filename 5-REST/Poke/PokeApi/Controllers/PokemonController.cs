@@ -63,7 +63,7 @@ namespace PokeApi.Controllers
             [HttpPost] This action will handle any post request from the client
         */
         [HttpPost("Add")]
-        public IActionResult Post([FromBody] Pokemon p_poke)
+        public IActionResult AddPokemon([FromBody] Pokemon p_poke)
         {
             try
             {
